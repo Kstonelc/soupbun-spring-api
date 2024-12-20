@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Configuration status="WARN" monitorInterval="30">
+    <Properties>
+        <!-- 定义日志格式，使用正确的颜色语法 -->
+        <Property name="LOG_PATTERN">%style{%d{yyyy-MM-dd HH:mm:ss.SSS}}{Magenta} [%thread] %highlight{%level}{FATAL=red, ERROR=red, WARN=yellow, INFO=blue, DEBUG=green, TRACE=blue} %style{%logger{36}}{Cyan} - %msg%n</Property>
+
+        <!-- 定义文件日志路径 -->
+        <Property name="FILE_PATH">logs</Property>
+
+        <!-- 定义文件中的日志格式（不带颜色） -->
+        <Property name="FILE_LOG_PATTERN">%d{yyyy-MM-dd HH:mm:ss.SSS} [%thread] %level %logger{36} - %msg%n</Property>
+    </Properties>
+
+    <Appenders>
+        <!-- 控制台彩色输出 -->
+        <Console name="ConsoleAppender" target="SYSTEM_OUT">
+            <PatternLayout pattern="${LOG_PATTERN}" disableAnsi="false"/>
+        </Console>
+
+        <!-- 滚动文件输出 -->
+        <RollingFile name="FileAppender"
+                     fileName="${FILE_PATH}/application.log"
+                     filePattern="${FILE_PATH}/application-%d{yyyy-MM-dd}-%i.log">
+            <PatternLayout pattern="${FILE_LOG_PATTERN}"/>
+            <Policies>
+                <TimeBasedTriggeringPolicy interval="1"/>
+                <SizeBasedTriggeringPolicy size="100MB"/>
+            </Policies>
+            <DefaultRolloverStrategy max="30"/>
+        </RollingFile>
+
+        <!-- 错误日志单独记录 -->
+        <RollingFile name="ErrorFileAppender"
+                     fileName="${FILE_PATH}/error.log"
+                     filePattern="${FILE_PATH}/error-%d{yyyy-MM-dd}-%i.log">
+            <PatternLayout pattern="${FILE_LOG_PATTERN}"/>
+            <Policies>
+                <TimeBasedTriggeringPolicy interval="1"/>
+                <SizeBasedTriggeringPolicy size="100MB"/>
+            </Policies>
+            <DefaultRolloverStrategy max="30"/>
+            <Filters>
+                <ThresholdFilter level="error" onMatch="ACCEPT" onMismatch="DENY"/>
+            </Filters>
+        </RollingFile>
+    </Appenders>
+
+    <Loggers>
+        <!-- 应用日志配置 -->
+        <Root level="info">
+            <AppenderRef ref="ConsoleAppender"/>
+            <AppenderRef ref="FileAppender"/>
+            <AppenderRef ref="ErrorFileAppender"/>
+        </Root>
+
+        <!-- 框架日志级别配置 -->
+        <Logger name="org.springframework" level="info" additivity="false">
+            <AppenderRef ref="ConsoleAppender"/>
+            <AppenderRef ref="FileAppender"/>
+        </Logger>
+    </Loggers>
+</Configuration>
