@@ -17,11 +17,11 @@ public class UserController {
     private static final Logger LOG = LogManager.getLogger(SoupbunApiApplication.class);
 
     @GetMapping("/get")
-    public User getUser(@RequestParam Long id) {
+    public String getUser(@RequestParam Long id) {
         LOG.info("info 级别日志 ...");
         LOG.warn("warn 级别日志 ...");
         LOG.error("error 级别日志 ...");
         LOG.fatal("fatal 级别日志 ...");
-        return new User(id, "John Doe", "johndoe@example.com");
+        return "Hello World";
     }
 }

@@ -1,25 +1,13 @@
 package com.soupbun.soupbunapi.model;
 
+import com.baomidou.mybatisplus.annotation.TableName;
+import lombok.Data;
+
+@Data
+@TableName("user") // 对应数据库表名
 public class User {
-    private final Long id;
-    private final String name;
-    private final String email;
-
-    public User(Long id, String name, String email) {
-        this.id = id;
-        this.name = name;
-        this.email = email;
-    }
-
-    public Long getId() {
-        return id;
-    }
-
-    public String getName() {
-        return name;
-    }
-
-    public String getEmail() {
-        return email;
-    }
+    private Long id;
+    private String username;
+    private String email;
+    private String password;
 }

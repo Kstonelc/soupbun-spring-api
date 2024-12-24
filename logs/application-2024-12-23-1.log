@@ -1,0 +1,201 @@
+2024-12-23 10:15:55.878 [main] INFO com.soupbun.soupbunapi.SoupbunApiApplication - Starting SoupbunApiApplication using Java 17.0.11 with PID 64100 (C:\projetcs\soupbun-api\target\classes started by kstone in C:\projetcs\soupbun-api)
+2024-12-23 10:15:55.889 [main] INFO com.soupbun.soupbunapi.SoupbunApiApplication - No active profile set, falling back to 1 default profile: "default"
+2024-12-23 10:15:56.506 [main] INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2024-12-23 10:15:56.518 [main] INFO org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2024-12-23 10:15:56.519 [main] INFO org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2024-12-23 10:15:56.519 [main] INFO org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.33]
+2024-12-23 10:15:56.599 [main] INFO org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2024-12-23 10:15:56.600 [main] INFO org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 681 ms
+2024-12-23 10:15:56.845 [main] INFO org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2024-12-23 10:15:56.858 [main] INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
+2024-12-23 10:15:56.864 [main] INFO com.soupbun.soupbunapi.SoupbunApiApplication - Started SoupbunApiApplication in 1.377 seconds (process running for 2.182)
+2024-12-23 10:27:49.559 [SpringApplicationShutdownHook] INFO org.springframework.boot.web.embedded.tomcat.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
+2024-12-23 10:27:49.742 [tomcat-shutdown] INFO org.springframework.boot.web.embedded.tomcat.GracefulShutdown - Graceful shutdown complete
+2024-12-23 10:27:53.684 [main] INFO com.soupbun.soupbunapi.SoupbunApiApplication - Starting SoupbunApiApplication using Java 17.0.11 with PID 110148 (C:\projetcs\soupbun-api\target\classes started by kstone in C:\projetcs\soupbun-api)
+2024-12-23 10:27:53.690 [main] INFO com.soupbun.soupbunapi.SoupbunApiApplication - No active profile set, falling back to 1 default profile: "default"
+2024-12-23 10:27:54.126 [main] WARN org.mybatis.spring.mapper.ClassPathMapperScanner - No MyBatis mapper was found in '[com.soupbun.soupbunapi]' package. Please check your configuration.
+2024-12-23 10:27:54.368 [main] INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2024-12-23 10:27:54.378 [main] INFO org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2024-12-23 10:27:54.379 [main] INFO org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2024-12-23 10:27:54.380 [main] INFO org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.33]
+2024-12-23 10:27:54.419 [main] INFO org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2024-12-23 10:27:54.419 [main] INFO org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 702 ms
+2024-12-23 10:27:54.620 [main] WARN org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'dataSource' defined in class path resource [org/springframework/boot/autoconfigure/jdbc/DataSourceConfiguration$Hikari.class]: Failed to instantiate [com.zaxxer.hikari.HikariDataSource]: Factory method 'dataSource' threw exception with message: Failed to determine a suitable driver class
+2024-12-23 10:27:54.622 [main] INFO org.apache.catalina.core.StandardService - Stopping service [Tomcat]
+2024-12-23 10:27:54.630 [main] INFO org.springframework.boot.autoconfigure.logging.ConditionEvaluationReportLogger - 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2024-12-23 10:27:54.644 [main] ERROR org.springframework.boot.diagnostics.LoggingFailureAnalysisReporter - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Failed to configure a DataSource: 'url' attribute is not specified and no embedded datasource could be configured.
+
+Reason: Failed to determine a suitable driver class
+
+
+Action:
+
+Consider the following:
+	If you want an embedded database (H2, HSQL or Derby), please put it on the classpath.
+	If you have database settings to be loaded from a particular profile you may need to activate it (no profiles are currently active).
+
+2024-12-23 15:13:31.890 [main] INFO com.soupbun.soupbunapi.SoupbunApiApplication - Starting SoupbunApiApplication using Java 17.0.11 with PID 50396 (C:\projetcs\soupbun-api\target\classes started by kstone in C:\projetcs\soupbun-api)
+2024-12-23 15:13:31.896 [main] INFO com.soupbun.soupbunapi.SoupbunApiApplication - No active profile set, falling back to 1 default profile: "default"
+2024-12-23 15:13:32.308 [main] WARN org.mybatis.spring.mapper.ClassPathMapperScanner - No MyBatis mapper was found in '[com.baomidou.mybatisplus.samples.quickstart.mapper]' package. Please check your configuration.
+2024-12-23 15:13:32.564 [main] INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2024-12-23 15:13:32.574 [main] INFO org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2024-12-23 15:13:32.575 [main] INFO org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2024-12-23 15:13:32.575 [main] INFO org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.33]
+2024-12-23 15:13:32.613 [main] INFO org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2024-12-23 15:13:32.614 [main] INFO org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 692 ms
+2024-12-23 15:13:32.814 [main] WARN org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'dataSource' defined in class path resource [org/springframework/boot/autoconfigure/jdbc/DataSourceConfiguration$Hikari.class]: Failed to instantiate [com.zaxxer.hikari.HikariDataSource]: Factory method 'dataSource' threw exception with message: Failed to determine a suitable driver class
+2024-12-23 15:13:32.816 [main] INFO org.apache.catalina.core.StandardService - Stopping service [Tomcat]
+2024-12-23 15:13:32.826 [main] INFO org.springframework.boot.autoconfigure.logging.ConditionEvaluationReportLogger - 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2024-12-23 15:13:32.839 [main] ERROR org.springframework.boot.diagnostics.LoggingFailureAnalysisReporter - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Failed to configure a DataSource: 'url' attribute is not specified and no embedded datasource could be configured.
+
+Reason: Failed to determine a suitable driver class
+
+
+Action:
+
+Consider the following:
+	If you want an embedded database (H2, HSQL or Derby), please put it on the classpath.
+	If you have database settings to be loaded from a particular profile you may need to activate it (no profiles are currently active).
+
+2024-12-23 15:14:26.718 [main] INFO com.soupbun.soupbunapi.SoupbunApiApplication - Starting SoupbunApiApplication using Java 17.0.11 with PID 66372 (C:\projetcs\soupbun-api\target\classes started by kstone in C:\projetcs\soupbun-api)
+2024-12-23 15:14:26.723 [main] INFO com.soupbun.soupbunapi.SoupbunApiApplication - No active profile set, falling back to 1 default profile: "default"
+2024-12-23 15:14:27.457 [main] INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2024-12-23 15:14:27.468 [main] INFO org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2024-12-23 15:14:27.470 [main] INFO org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2024-12-23 15:14:27.471 [main] INFO org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.33]
+2024-12-23 15:14:27.512 [main] INFO org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2024-12-23 15:14:27.512 [main] INFO org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 762 ms
+2024-12-23 15:14:27.721 [main] WARN org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'dataSource' defined in class path resource [org/springframework/boot/autoconfigure/jdbc/DataSourceConfiguration$Hikari.class]: Failed to instantiate [com.zaxxer.hikari.HikariDataSource]: Factory method 'dataSource' threw exception with message: Failed to determine a suitable driver class
+2024-12-23 15:14:27.723 [main] INFO org.apache.catalina.core.StandardService - Stopping service [Tomcat]
+2024-12-23 15:14:27.732 [main] INFO org.springframework.boot.autoconfigure.logging.ConditionEvaluationReportLogger - 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2024-12-23 15:14:27.742 [main] ERROR org.springframework.boot.diagnostics.LoggingFailureAnalysisReporter - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Failed to configure a DataSource: 'url' attribute is not specified and no embedded datasource could be configured.
+
+Reason: Failed to determine a suitable driver class
+
+
+Action:
+
+Consider the following:
+	If you want an embedded database (H2, HSQL or Derby), please put it on the classpath.
+	If you have database settings to be loaded from a particular profile you may need to activate it (no profiles are currently active).
+
+2024-12-23 15:19:54.068 [main] INFO com.soupbun.soupbunapi.SoupbunApiApplication - Starting SoupbunApiApplication using Java 17.0.11 with PID 3416 (C:\projetcs\soupbun-api\target\classes started by kstone in C:\projetcs\soupbun-api)
+2024-12-23 15:19:54.073 [main] INFO com.soupbun.soupbunapi.SoupbunApiApplication - No active profile set, falling back to 1 default profile: "default"
+2024-12-23 15:19:54.767 [main] INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2024-12-23 15:19:54.778 [main] INFO org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2024-12-23 15:19:54.779 [main] INFO org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2024-12-23 15:19:54.779 [main] INFO org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.33]
+2024-12-23 15:19:54.819 [main] INFO org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2024-12-23 15:19:54.819 [main] INFO org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 720 ms
+2024-12-23 15:19:55.031 [main] WARN org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'dataSource' defined in class path resource [org/springframework/boot/autoconfigure/jdbc/DataSourceConfiguration$Hikari.class]: Failed to instantiate [com.zaxxer.hikari.HikariDataSource]: Factory method 'dataSource' threw exception with message: Failed to determine a suitable driver class
+2024-12-23 15:19:55.033 [main] INFO org.apache.catalina.core.StandardService - Stopping service [Tomcat]
+2024-12-23 15:19:55.042 [main] INFO org.springframework.boot.autoconfigure.logging.ConditionEvaluationReportLogger - 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2024-12-23 15:19:55.056 [main] ERROR org.springframework.boot.diagnostics.LoggingFailureAnalysisReporter - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Failed to configure a DataSource: 'url' attribute is not specified and no embedded datasource could be configured.
+
+Reason: Failed to determine a suitable driver class
+
+
+Action:
+
+Consider the following:
+	If you want an embedded database (H2, HSQL or Derby), please put it on the classpath.
+	If you have database settings to be loaded from a particular profile you may need to activate it (no profiles are currently active).
+
+2024-12-23 15:20:57.391 [main] INFO com.soupbun.soupbunapi.SoupbunApiApplication - Starting SoupbunApiApplication using Java 17.0.11 with PID 90960 (C:\projetcs\soupbun-api\target\classes started by kstone in C:\projetcs\soupbun-api)
+2024-12-23 15:20:57.396 [main] INFO com.soupbun.soupbunapi.SoupbunApiApplication - No active profile set, falling back to 1 default profile: "default"
+2024-12-23 15:20:58.111 [main] INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2024-12-23 15:20:58.121 [main] INFO org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2024-12-23 15:20:58.122 [main] INFO org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2024-12-23 15:20:58.122 [main] INFO org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.33]
+2024-12-23 15:20:58.162 [main] INFO org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2024-12-23 15:20:58.163 [main] INFO org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 740 ms
+2024-12-23 15:20:58.382 [main] WARN org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'dataSource' defined in class path resource [org/springframework/boot/autoconfigure/jdbc/DataSourceConfiguration$Hikari.class]: Failed to instantiate [com.zaxxer.hikari.HikariDataSource]: Factory method 'dataSource' threw exception with message: Cannot load driver class: com.mysql.cj.jdbc.Driver
+2024-12-23 15:20:58.385 [main] INFO org.apache.catalina.core.StandardService - Stopping service [Tomcat]
+2024-12-23 15:20:58.394 [main] INFO org.springframework.boot.autoconfigure.logging.ConditionEvaluationReportLogger - 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2024-12-23 15:20:58.405 [main] ERROR org.springframework.boot.SpringApplication - Application run failed
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'dataSource' defined in class path resource [org/springframework/boot/autoconfigure/jdbc/DataSourceConfiguration$Hikari.class]: Failed to instantiate [com.zaxxer.hikari.HikariDataSource]: Factory method 'dataSource' threw exception with message: Cannot load driver class: com.mysql.cj.jdbc.Driver
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiate(ConstructorResolver.java:657) ~[spring-beans-6.2.0.jar:6.2.0]
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:645) ~[spring-beans-6.2.0.jar:6.2.0]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1351) ~[spring-beans-6.2.0.jar:6.2.0]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1181) ~[spring-beans-6.2.0.jar:6.2.0]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:563) ~[spring-beans-6.2.0.jar:6.2.0]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:523) ~[spring-beans-6.2.0.jar:6.2.0]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:336) ~[spring-beans-6.2.0.jar:6.2.0]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:288) ~[spring-beans-6.2.0.jar:6.2.0]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:334) ~[spring-beans-6.2.0.jar:6.2.0]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199) ~[spring-beans-6.2.0.jar:6.2.0]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.instantiateSingleton(DefaultListableBeanFactory.java:1122) ~[spring-beans-6.2.0.jar:6.2.0]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingleton(DefaultListableBeanFactory.java:1093) ~[spring-beans-6.2.0.jar:6.2.0]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:1030) ~[spring-beans-6.2.0.jar:6.2.0]
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:987) ~[spring-context-6.2.0.jar:6.2.0]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:627) ~[spring-context-6.2.0.jar:6.2.0]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:146) ~[spring-boot-3.4.0.jar:3.4.0]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:752) [spring-boot-3.4.0.jar:3.4.0]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:439) [spring-boot-3.4.0.jar:3.4.0]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:318) [spring-boot-3.4.0.jar:3.4.0]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1361) [spring-boot-3.4.0.jar:3.4.0]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1350) [spring-boot-3.4.0.jar:3.4.0]
+	at com.soupbun.soupbunapi.SoupbunApiApplication.main(SoupbunApiApplication.java:12) [classes/:?]
+Caused by: org.springframework.beans.BeanInstantiationException: Failed to instantiate [com.zaxxer.hikari.HikariDataSource]: Factory method 'dataSource' threw exception with message: Cannot load driver class: com.mysql.cj.jdbc.Driver
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.lambda$instantiate$0(SimpleInstantiationStrategy.java:199) ~[spring-beans-6.2.0.jar:6.2.0]
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiateWithFactoryMethod(SimpleInstantiationStrategy.java:88) ~[spring-beans-6.2.0.jar:6.2.0]
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:168) ~[spring-beans-6.2.0.jar:6.2.0]
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiate(ConstructorResolver.java:653) ~[spring-beans-6.2.0.jar:6.2.0]
+	... 21 more
+Caused by: java.lang.IllegalStateException: Cannot load driver class: com.mysql.cj.jdbc.Driver
+	at org.springframework.util.Assert.state(Assert.java:101) ~[spring-core-6.2.0.jar:6.2.0]
+	at org.springframework.boot.autoconfigure.jdbc.DataSourceProperties.determineDriverClassName(DataSourceProperties.java:175) ~[spring-boot-autoconfigure-3.4.0.jar:3.4.0]
+	at org.springframework.boot.autoconfigure.jdbc.PropertiesJdbcConnectionDetails.getDriverClassName(PropertiesJdbcConnectionDetails.java:49) ~[spring-boot-autoconfigure-3.4.0.jar:3.4.0]
+	at org.springframework.boot.autoconfigure.jdbc.DataSourceConfiguration.createDataSource(DataSourceConfiguration.java:55) ~[spring-boot-autoconfigure-3.4.0.jar:3.4.0]
+	at org.springframework.boot.autoconfigure.jdbc.DataSourceConfiguration$Hikari.dataSource(DataSourceConfiguration.java:117) ~[spring-boot-autoconfigure-3.4.0.jar:3.4.0]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:?]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77) ~[?:?]
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:?]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568) ~[?:?]
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.lambda$instantiate$0(SimpleInstantiationStrategy.java:171) ~[spring-beans-6.2.0.jar:6.2.0]
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiateWithFactoryMethod(SimpleInstantiationStrategy.java:88) ~[spring-beans-6.2.0.jar:6.2.0]
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:168) ~[spring-beans-6.2.0.jar:6.2.0]
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiate(ConstructorResolver.java:653) ~[spring-beans-6.2.0.jar:6.2.0]
+	... 21 more

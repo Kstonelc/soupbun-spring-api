@@ -1,26 +1,386 @@
-2024-12-20 17:17:33.801 [main] INFO com.soupbun.soupbunapi.SoupbunApiApplication - Starting SoupbunApiApplication using Java 17.0.11 with PID 74144 (C:\projetcs\soupbun-api\target\classes started by kstone in C:\projetcs\soupbun-api)
-2024-12-20 17:17:33.806 [main] INFO com.soupbun.soupbunapi.SoupbunApiApplication - No active profile set, falling back to 1 default profile: "default"
-2024-12-20 17:17:34.305 [main] INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
-2024-12-20 17:17:34.315 [main] INFO org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
-2024-12-20 17:17:34.316 [main] INFO org.apache.catalina.core.StandardService - Starting service [Tomcat]
-2024-12-20 17:17:34.317 [main] INFO org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.33]
-2024-12-20 17:17:34.353 [main] INFO org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
-2024-12-20 17:17:34.353 [main] INFO org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 526 ms
-2024-12-20 17:17:34.567 [main] INFO org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
-2024-12-20 17:17:34.579 [main] INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
-2024-12-20 17:17:34.585 [main] INFO com.soupbun.soupbunapi.SoupbunApiApplication - Started SoupbunApiApplication in 1.095 seconds (process running for 1.6)
-2024-12-20 17:17:40.453 [http-nio-8080-exec-1] INFO org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
-2024-12-20 17:17:40.453 [http-nio-8080-exec-1] INFO org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
-2024-12-20 17:17:40.454 [http-nio-8080-exec-1] INFO org.springframework.web.servlet.DispatcherServlet - Completed initialization in 1 ms
-2024-12-20 17:17:40.460 [http-nio-8080-exec-1] INFO com.soupbun.soupbunapi.filter.RequestLoggingFilter - =======【REQUEST DATA】 URL:http://127.0.0.1:8080/users/get PARAMS:id=1 METHOD:GET=======
-2024-12-20 17:17:40.480 [http-nio-8080-exec-1] INFO com.soupbun.soupbunapi.SoupbunApiApplication - info 级别日志 ...
-2024-12-20 17:17:40.480 [http-nio-8080-exec-1] WARN com.soupbun.soupbunapi.SoupbunApiApplication - warn 级别日志 ...
-2024-12-20 17:17:40.480 [http-nio-8080-exec-1] ERROR com.soupbun.soupbunapi.SoupbunApiApplication - error 级别日志 ...
-2024-12-20 17:17:40.480 [http-nio-8080-exec-1] FATAL com.soupbun.soupbunapi.SoupbunApiApplication - fatal 级别日志 ...
-2024-12-20 17:17:41.336 [http-nio-8080-exec-2] INFO com.soupbun.soupbunapi.filter.RequestLoggingFilter - =======【REQUEST DATA】 URL:http://127.0.0.1:8080/users/get PARAMS:id=1 METHOD:GET=======
-2024-12-20 17:17:41.336 [http-nio-8080-exec-2] INFO com.soupbun.soupbunapi.SoupbunApiApplication - info 级别日志 ...
-2024-12-20 17:17:41.337 [http-nio-8080-exec-2] WARN com.soupbun.soupbunapi.SoupbunApiApplication - warn 级别日志 ...
-2024-12-20 17:17:41.337 [http-nio-8080-exec-2] ERROR com.soupbun.soupbunapi.SoupbunApiApplication - error 级别日志 ...
-2024-12-20 17:17:41.337 [http-nio-8080-exec-2] FATAL com.soupbun.soupbunapi.SoupbunApiApplication - fatal 级别日志 ...
-2024-12-20 18:00:29.790 [SpringApplicationShutdownHook] INFO org.springframework.boot.web.embedded.tomcat.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
-2024-12-20 18:00:30.020 [tomcat-shutdown] INFO org.springframework.boot.web.embedded.tomcat.GracefulShutdown - Graceful shutdown complete
+2024-12-24 17:31:16.218 [main] INFO com.soupbun.soupbunapi.SoupbunApiApplication - Starting SoupbunApiApplication using Java 17.0.11 with PID 26048 (C:\projetcs\soupbun-api\target\classes started by kstone in C:\projetcs\soupbun-api)
+2024-12-24 17:31:16.227 [main] INFO com.soupbun.soupbunapi.SoupbunApiApplication - No active profile set, falling back to 1 default profile: "default"
+2024-12-24 17:31:16.932 [main] INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2024-12-24 17:31:16.941 [main] INFO org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2024-12-24 17:31:16.942 [main] INFO org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2024-12-24 17:31:16.942 [main] INFO org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.33]
+2024-12-24 17:31:16.982 [main] INFO org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2024-12-24 17:31:16.982 [main] INFO org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 729 ms
+2024-12-24 17:31:17.195 [main] WARN org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'dataSource' defined in class path resource [org/springframework/boot/autoconfigure/jdbc/DataSourceConfiguration$Hikari.class]: Failed to instantiate [com.zaxxer.hikari.HikariDataSource]: Factory method 'dataSource' threw exception with message: Cannot load driver class: com.mysql.cj.jdbc.Driver
+2024-12-24 17:31:17.196 [main] INFO org.apache.catalina.core.StandardService - Stopping service [Tomcat]
+2024-12-24 17:31:17.206 [main] INFO org.springframework.boot.autoconfigure.logging.ConditionEvaluationReportLogger - 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2024-12-24 17:31:17.217 [main] ERROR org.springframework.boot.SpringApplication - Application run failed
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'dataSource' defined in class path resource [org/springframework/boot/autoconfigure/jdbc/DataSourceConfiguration$Hikari.class]: Failed to instantiate [com.zaxxer.hikari.HikariDataSource]: Factory method 'dataSource' threw exception with message: Cannot load driver class: com.mysql.cj.jdbc.Driver
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiate(ConstructorResolver.java:657) ~[spring-beans-6.2.0.jar:6.2.0]
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:645) ~[spring-beans-6.2.0.jar:6.2.0]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1351) ~[spring-beans-6.2.0.jar:6.2.0]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1181) ~[spring-beans-6.2.0.jar:6.2.0]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:563) ~[spring-beans-6.2.0.jar:6.2.0]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:523) ~[spring-beans-6.2.0.jar:6.2.0]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:336) ~[spring-beans-6.2.0.jar:6.2.0]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:288) ~[spring-beans-6.2.0.jar:6.2.0]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:334) ~[spring-beans-6.2.0.jar:6.2.0]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199) ~[spring-beans-6.2.0.jar:6.2.0]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.instantiateSingleton(DefaultListableBeanFactory.java:1122) ~[spring-beans-6.2.0.jar:6.2.0]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingleton(DefaultListableBeanFactory.java:1093) ~[spring-beans-6.2.0.jar:6.2.0]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:1030) ~[spring-beans-6.2.0.jar:6.2.0]
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:987) ~[spring-context-6.2.0.jar:6.2.0]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:627) ~[spring-context-6.2.0.jar:6.2.0]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:146) ~[spring-boot-3.4.0.jar:3.4.0]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:752) [spring-boot-3.4.0.jar:3.4.0]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:439) [spring-boot-3.4.0.jar:3.4.0]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:318) [spring-boot-3.4.0.jar:3.4.0]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1361) [spring-boot-3.4.0.jar:3.4.0]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1350) [spring-boot-3.4.0.jar:3.4.0]
+	at com.soupbun.soupbunapi.SoupbunApiApplication.main(SoupbunApiApplication.java:12) [classes/:?]
+Caused by: org.springframework.beans.BeanInstantiationException: Failed to instantiate [com.zaxxer.hikari.HikariDataSource]: Factory method 'dataSource' threw exception with message: Cannot load driver class: com.mysql.cj.jdbc.Driver
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.lambda$instantiate$0(SimpleInstantiationStrategy.java:199) ~[spring-beans-6.2.0.jar:6.2.0]
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiateWithFactoryMethod(SimpleInstantiationStrategy.java:88) ~[spring-beans-6.2.0.jar:6.2.0]
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:168) ~[spring-beans-6.2.0.jar:6.2.0]
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiate(ConstructorResolver.java:653) ~[spring-beans-6.2.0.jar:6.2.0]
+	... 21 more
+Caused by: java.lang.IllegalStateException: Cannot load driver class: com.mysql.cj.jdbc.Driver
+	at org.springframework.util.Assert.state(Assert.java:101) ~[spring-core-6.2.0.jar:6.2.0]
+	at org.springframework.boot.autoconfigure.jdbc.DataSourceProperties.determineDriverClassName(DataSourceProperties.java:175) ~[spring-boot-autoconfigure-3.4.0.jar:3.4.0]
+	at org.springframework.boot.autoconfigure.jdbc.PropertiesJdbcConnectionDetails.getDriverClassName(PropertiesJdbcConnectionDetails.java:49) ~[spring-boot-autoconfigure-3.4.0.jar:3.4.0]
+	at org.springframework.boot.autoconfigure.jdbc.DataSourceConfiguration.createDataSource(DataSourceConfiguration.java:55) ~[spring-boot-autoconfigure-3.4.0.jar:3.4.0]
+	at org.springframework.boot.autoconfigure.jdbc.DataSourceConfiguration$Hikari.dataSource(DataSourceConfiguration.java:117) ~[spring-boot-autoconfigure-3.4.0.jar:3.4.0]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:?]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77) ~[?:?]
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:?]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568) ~[?:?]
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.lambda$instantiate$0(SimpleInstantiationStrategy.java:171) ~[spring-beans-6.2.0.jar:6.2.0]
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiateWithFactoryMethod(SimpleInstantiationStrategy.java:88) ~[spring-beans-6.2.0.jar:6.2.0]
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:168) ~[spring-beans-6.2.0.jar:6.2.0]
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiate(ConstructorResolver.java:653) ~[spring-beans-6.2.0.jar:6.2.0]
+	... 21 more
+2024-12-24 17:32:49.952 [main] INFO com.soupbun.soupbunapi.SoupbunApiApplication - Starting SoupbunApiApplication using Java 17.0.11 with PID 3780 (C:\projetcs\soupbun-api\target\classes started by kstone in C:\projetcs\soupbun-api)
+2024-12-24 17:32:49.959 [main] INFO com.soupbun.soupbunapi.SoupbunApiApplication - No active profile set, falling back to 1 default profile: "default"
+2024-12-24 17:32:50.641 [main] INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2024-12-24 17:32:50.651 [main] INFO org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2024-12-24 17:32:50.652 [main] INFO org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2024-12-24 17:32:50.653 [main] INFO org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.33]
+2024-12-24 17:32:50.690 [main] INFO org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2024-12-24 17:32:50.690 [main] INFO org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 703 ms
+2024-12-24 17:32:50.947 [main] WARN org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'com.baomidou.mybatisplus.autoconfigure.MybatisPlusAutoConfiguration': Failed to instantiate [com.baomidou.mybatisplus.autoconfigure.MybatisPlusAutoConfiguration]: Constructor threw exception
+2024-12-24 17:32:50.949 [main] INFO org.apache.catalina.core.StandardService - Stopping service [Tomcat]
+2024-12-24 17:32:50.958 [main] INFO org.springframework.boot.autoconfigure.logging.ConditionEvaluationReportLogger - 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2024-12-24 17:32:50.968 [main] ERROR org.springframework.boot.diagnostics.LoggingFailureAnalysisReporter - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+The dependencies of some of the beans in the application context form a cycle:
+
+┌─────┐
+|  com.baomidou.mybatisplus.autoconfigure.MybatisPlusAutoConfiguration
+↑     ↓
+|  configurationCustomizer defined in URL [jar:file:/C:/Users/kstone/.m2/repository/com/baomidou/mybatis-plus-spring-boot-autoconfigure/3.5.9/mybatis-plus-spring-boot-autoconfigure-3.5.9.jar!/com/baomidou/mybatisplus/autoconfigure/ConfigurationCustomizer.class]
+└─────┘
+
+
+Action:
+
+Relying upon circular references is discouraged and they are prohibited by default. Update your application to remove the dependency cycle between beans. As a last resort, it may be possible to break the cycle automatically by setting spring.main.allow-circular-references to true.
+
+2024-12-24 17:44:06.333 [main] INFO com.soupbun.soupbunapi.SoupbunApiApplication - Starting SoupbunApiApplication using Java 17.0.11 with PID 42368 (C:\projetcs\soupbun-api\target\classes started by kstone in C:\projetcs\soupbun-api)
+2024-12-24 17:44:06.338 [main] INFO com.soupbun.soupbunapi.SoupbunApiApplication - No active profile set, falling back to 1 default profile: "default"
+2024-12-24 17:44:07.006 [main] INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2024-12-24 17:44:07.018 [main] INFO org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2024-12-24 17:44:07.019 [main] INFO org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2024-12-24 17:44:07.019 [main] INFO org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.33]
+2024-12-24 17:44:07.057 [main] INFO org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2024-12-24 17:44:07.057 [main] INFO org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 688 ms
+2024-12-24 17:44:07.612 [main] INFO org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2024-12-24 17:44:07.627 [main] INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
+2024-12-24 17:44:07.634 [main] INFO com.soupbun.soupbunapi.SoupbunApiApplication - Started SoupbunApiApplication in 1.654 seconds (process running for 2.267)
+2024-12-24 17:48:32.213 [SpringApplicationShutdownHook] INFO org.springframework.boot.web.embedded.tomcat.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
+2024-12-24 17:48:32.376 [tomcat-shutdown] INFO org.springframework.boot.web.embedded.tomcat.GracefulShutdown - Graceful shutdown complete
+2024-12-24 17:48:34.284 [main] INFO com.soupbun.soupbunapi.SoupbunApiApplication - Starting SoupbunApiApplication using Java 17.0.11 with PID 36744 (C:\projetcs\soupbun-api\target\classes started by kstone in C:\projetcs\soupbun-api)
+2024-12-24 17:48:34.289 [main] INFO com.soupbun.soupbunapi.SoupbunApiApplication - No active profile set, falling back to 1 default profile: "default"
+2024-12-24 17:48:34.889 [main] INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2024-12-24 17:48:34.898 [main] INFO org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2024-12-24 17:48:34.899 [main] INFO org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2024-12-24 17:48:34.900 [main] INFO org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.33]
+2024-12-24 17:48:34.939 [main] INFO org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2024-12-24 17:48:34.940 [main] INFO org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 626 ms
+2024-12-24 17:48:35.419 [main] INFO org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2024-12-24 17:48:35.432 [main] INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
+2024-12-24 17:48:35.439 [main] INFO com.soupbun.soupbunapi.SoupbunApiApplication - Started SoupbunApiApplication in 1.476 seconds (process running for 1.998)
+2024-12-24 17:49:00.773 [SpringApplicationShutdownHook] INFO org.springframework.boot.web.embedded.tomcat.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
+2024-12-24 17:49:00.942 [tomcat-shutdown] INFO org.springframework.boot.web.embedded.tomcat.GracefulShutdown - Graceful shutdown complete
+2024-12-24 17:49:02.759 [main] INFO com.soupbun.soupbunapi.SoupbunApiApplication - Starting SoupbunApiApplication using Java 17.0.11 with PID 39140 (C:\projetcs\soupbun-api\target\classes started by kstone in C:\projetcs\soupbun-api)
+2024-12-24 17:49:02.765 [main] INFO com.soupbun.soupbunapi.SoupbunApiApplication - No active profile set, falling back to 1 default profile: "default"
+2024-12-24 17:49:03.353 [main] INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2024-12-24 17:49:03.362 [main] INFO org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2024-12-24 17:49:03.364 [main] INFO org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2024-12-24 17:49:03.364 [main] INFO org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.33]
+2024-12-24 17:49:03.400 [main] INFO org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2024-12-24 17:49:03.401 [main] INFO org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 613 ms
+2024-12-24 17:49:03.868 [main] INFO org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2024-12-24 17:49:03.881 [main] INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
+2024-12-24 17:49:03.888 [main] INFO com.soupbun.soupbunapi.SoupbunApiApplication - Started SoupbunApiApplication in 1.444 seconds (process running for 1.987)
+2024-12-24 17:56:56.726 [SpringApplicationShutdownHook] INFO org.springframework.boot.web.embedded.tomcat.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
+2024-12-24 17:56:56.887 [tomcat-shutdown] INFO org.springframework.boot.web.embedded.tomcat.GracefulShutdown - Graceful shutdown complete
+2024-12-24 17:56:58.898 [main] INFO com.soupbun.soupbunapi.SoupbunApiApplication - Starting SoupbunApiApplication using Java 17.0.11 with PID 10528 (C:\projetcs\soupbun-api\target\classes started by kstone in C:\projetcs\soupbun-api)
+2024-12-24 17:56:58.903 [main] INFO com.soupbun.soupbunapi.SoupbunApiApplication - No active profile set, falling back to 1 default profile: "default"
+2024-12-24 17:56:59.503 [main] INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2024-12-24 17:56:59.512 [main] INFO org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2024-12-24 17:56:59.513 [main] INFO org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2024-12-24 17:56:59.513 [main] INFO org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.33]
+2024-12-24 17:56:59.557 [main] INFO org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2024-12-24 17:56:59.557 [main] INFO org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 631 ms
+2024-12-24 17:57:00.010 [main] INFO org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2024-12-24 17:57:00.026 [main] INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
+2024-12-24 17:57:00.034 [main] INFO com.soupbun.soupbunapi.SoupbunApiApplication - Started SoupbunApiApplication in 1.448 seconds (process running for 2.018)
+2024-12-24 17:57:20.144 [SpringApplicationShutdownHook] INFO org.springframework.boot.web.embedded.tomcat.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
+2024-12-24 17:57:20.305 [tomcat-shutdown] INFO org.springframework.boot.web.embedded.tomcat.GracefulShutdown - Graceful shutdown complete
+2024-12-24 17:57:22.058 [main] INFO com.soupbun.soupbunapi.SoupbunApiApplication - Starting SoupbunApiApplication using Java 17.0.11 with PID 38356 (C:\projetcs\soupbun-api\target\classes started by kstone in C:\projetcs\soupbun-api)
+2024-12-24 17:57:22.064 [main] INFO com.soupbun.soupbunapi.SoupbunApiApplication - No active profile set, falling back to 1 default profile: "default"
+2024-12-24 17:57:22.640 [main] INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2024-12-24 17:57:22.648 [main] INFO org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2024-12-24 17:57:22.650 [main] INFO org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2024-12-24 17:57:22.650 [main] INFO org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.33]
+2024-12-24 17:57:22.686 [main] INFO org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2024-12-24 17:57:22.686 [main] INFO org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 599 ms
+2024-12-24 17:57:23.154 [main] INFO org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2024-12-24 17:57:23.166 [main] INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
+2024-12-24 17:57:23.173 [main] INFO com.soupbun.soupbunapi.SoupbunApiApplication - Started SoupbunApiApplication in 1.417 seconds (process running for 1.928)
+2024-12-24 18:00:03.686 [SpringApplicationShutdownHook] INFO org.springframework.boot.web.embedded.tomcat.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
+2024-12-24 18:00:03.848 [tomcat-shutdown] INFO org.springframework.boot.web.embedded.tomcat.GracefulShutdown - Graceful shutdown complete
+2024-12-24 18:00:07.808 [main] INFO com.soupbun.soupbunapi.SoupbunApiApplication - Starting SoupbunApiApplication using Java 17.0.11 with PID 39516 (C:\projetcs\soupbun-api\target\classes started by kstone in C:\projetcs\soupbun-api)
+2024-12-24 18:00:07.814 [main] INFO com.soupbun.soupbunapi.SoupbunApiApplication - No active profile set, falling back to 1 default profile: "default"
+2024-12-24 18:00:08.184 [main] INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-12-24 18:00:08.198 [main] INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 8 ms. Found 0 JPA repository interfaces.
+2024-12-24 18:00:08.498 [main] INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2024-12-24 18:00:08.507 [main] INFO org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2024-12-24 18:00:08.509 [main] INFO org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2024-12-24 18:00:08.509 [main] INFO org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.33]
+2024-12-24 18:00:08.547 [main] INFO org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2024-12-24 18:00:08.547 [main] INFO org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 708 ms
+2024-12-24 18:00:08.643 [main] INFO org.hibernate.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-12-24 18:00:08.677 [main] INFO org.hibernate.Version - HHH000412: Hibernate ORM core version 6.6.2.Final
+2024-12-24 18:00:08.698 [main] INFO org.hibernate.cache.internal.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2024-12-24 18:00:08.892 [main] INFO org.springframework.orm.jpa.persistenceunit.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-12-24 18:00:08.915 [main] INFO com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2024-12-24 18:00:10.482 [main] WARN org.hibernate.engine.jdbc.spi.SqlExceptionHelper - SQL Error: 1049, SQLState: 42000
+2024-12-24 18:00:10.483 [main] ERROR org.hibernate.engine.jdbc.spi.SqlExceptionHelper - Unknown database 'sql'
+2024-12-24 18:00:10.487 [main] WARN org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator - HHH000342: Could not obtain connection to query metadata
+org.hibernate.exception.SQLGrammarException: unable to obtain isolated JDBC connection [Unknown database 'sql'] [n/a]
+	at org.hibernate.exception.internal.SQLStateConversionDelegate.convert(SQLStateConversionDelegate.java:91) ~[hibernate-core-6.6.2.Final.jar:6.6.2.Final]
+	at org.hibernate.exception.internal.StandardSQLExceptionConverter.convert(StandardSQLExceptionConverter.java:58) ~[hibernate-core-6.6.2.Final.jar:6.6.2.Final]
+	at org.hibernate.engine.jdbc.spi.SqlExceptionHelper.convert(SqlExceptionHelper.java:108) ~[hibernate-core-6.6.2.Final.jar:6.6.2.Final]
+	at org.hibernate.engine.jdbc.spi.SqlExceptionHelper.convert(SqlExceptionHelper.java:94) ~[hibernate-core-6.6.2.Final.jar:6.6.2.Final]
+	at org.hibernate.resource.transaction.backend.jdbc.internal.JdbcIsolationDelegate.delegateWork(JdbcIsolationDelegate.java:116) ~[hibernate-core-6.6.2.Final.jar:6.6.2.Final]
+	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator.getJdbcEnvironmentUsingJdbcMetadata(JdbcEnvironmentInitiator.java:320) ~[hibernate-core-6.6.2.Final.jar:6.6.2.Final]
+	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator.initiateService(JdbcEnvironmentInitiator.java:129) ~[hibernate-core-6.6.2.Final.jar:6.6.2.Final]
+	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator.initiateService(JdbcEnvironmentInitiator.java:81) ~[hibernate-core-6.6.2.Final.jar:6.6.2.Final]
+	at org.hibernate.boot.registry.internal.StandardServiceRegistryImpl.initiateService(StandardServiceRegistryImpl.java:130) ~[hibernate-core-6.6.2.Final.jar:6.6.2.Final]
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.createService(AbstractServiceRegistryImpl.java:263) ~[hibernate-core-6.6.2.Final.jar:6.6.2.Final]
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.initializeService(AbstractServiceRegistryImpl.java:238) ~[hibernate-core-6.6.2.Final.jar:6.6.2.Final]
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.getService(AbstractServiceRegistryImpl.java:215) ~[hibernate-core-6.6.2.Final.jar:6.6.2.Final]
+	at org.hibernate.boot.model.relational.Database.<init>(Database.java:45) ~[hibernate-core-6.6.2.Final.jar:6.6.2.Final]
+	at org.hibernate.boot.internal.InFlightMetadataCollectorImpl.getDatabase(InFlightMetadataCollectorImpl.java:226) ~[hibernate-core-6.6.2.Final.jar:6.6.2.Final]
+	at org.hibernate.boot.internal.InFlightMetadataCollectorImpl.<init>(InFlightMetadataCollectorImpl.java:194) ~[hibernate-core-6.6.2.Final.jar:6.6.2.Final]
+	at org.hibernate.boot.model.process.spi.MetadataBuildingProcess.complete(MetadataBuildingProcess.java:171) ~[hibernate-core-6.6.2.Final.jar:6.6.2.Final]
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.metadata(EntityManagerFactoryBuilderImpl.java:1431) ~[hibernate-core-6.6.2.Final.jar:6.6.2.Final]
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.build(EntityManagerFactoryBuilderImpl.java:1502) ~[hibernate-core-6.6.2.Final.jar:6.6.2.Final]
+	at org.springframework.orm.jpa.vendor.SpringHibernateJpaPersistenceProvider.createContainerEntityManagerFactory(SpringHibernateJpaPersistenceProvider.java:66) ~[spring-orm-6.2.0.jar:6.2.0]
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.createNativeEntityManagerFactory(LocalContainerEntityManagerFactoryBean.java:390) ~[spring-orm-6.2.0.jar:6.2.0]
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.buildNativeEntityManagerFactory(AbstractEntityManagerFactoryBean.java:419) ~[spring-orm-6.2.0.jar:6.2.0]
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.afterPropertiesSet(AbstractEntityManagerFactoryBean.java:400) ~[spring-orm-6.2.0.jar:6.2.0]
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.afterPropertiesSet(LocalContainerEntityManagerFactoryBean.java:366) ~[spring-orm-6.2.0.jar:6.2.0]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1849) ~[spring-beans-6.2.0.jar:6.2.0]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1798) ~[spring-beans-6.2.0.jar:6.2.0]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:601) ~[spring-beans-6.2.0.jar:6.2.0]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:523) ~[spring-beans-6.2.0.jar:6.2.0]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:336) ~[spring-beans-6.2.0.jar:6.2.0]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:288) [spring-beans-6.2.0.jar:6.2.0]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:334) [spring-beans-6.2.0.jar:6.2.0]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:204) [spring-beans-6.2.0.jar:6.2.0]
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:970) [spring-context-6.2.0.jar:6.2.0]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:627) [spring-context-6.2.0.jar:6.2.0]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:146) [spring-boot-3.4.0.jar:3.4.0]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:752) [spring-boot-3.4.0.jar:3.4.0]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:439) [spring-boot-3.4.0.jar:3.4.0]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:318) [spring-boot-3.4.0.jar:3.4.0]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1361) [spring-boot-3.4.0.jar:3.4.0]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1350) [spring-boot-3.4.0.jar:3.4.0]
+	at com.soupbun.soupbunapi.SoupbunApiApplication.main(SoupbunApiApplication.java:12) [classes/:?]
+Caused by: java.sql.SQLSyntaxErrorException: Unknown database 'sql'
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:112) ~[mysql-connector-j-9.1.0.jar:9.1.0]
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:114) ~[mysql-connector-j-9.1.0.jar:9.1.0]
+	at com.mysql.cj.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:837) ~[mysql-connector-j-9.1.0.jar:9.1.0]
+	at com.mysql.cj.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:420) ~[mysql-connector-j-9.1.0.jar:9.1.0]
+	at com.mysql.cj.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:238) ~[mysql-connector-j-9.1.0.jar:9.1.0]
+	at com.mysql.cj.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:180) ~[mysql-connector-j-9.1.0.jar:9.1.0]
+	at com.zaxxer.hikari.util.DriverDataSource.getConnection(DriverDataSource.java:137) ~[HikariCP-5.1.0.jar:?]
+	at com.zaxxer.hikari.pool.PoolBase.newConnection(PoolBase.java:360) ~[HikariCP-5.1.0.jar:?]
+	at com.zaxxer.hikari.pool.PoolBase.newPoolEntry(PoolBase.java:202) ~[HikariCP-5.1.0.jar:?]
+	at com.zaxxer.hikari.pool.HikariPool.createPoolEntry(HikariPool.java:461) ~[HikariCP-5.1.0.jar:?]
+	at com.zaxxer.hikari.pool.HikariPool.checkFailFast(HikariPool.java:550) ~[HikariCP-5.1.0.jar:?]
+	at com.zaxxer.hikari.pool.HikariPool.<init>(HikariPool.java:98) ~[HikariCP-5.1.0.jar:?]
+	at com.zaxxer.hikari.HikariDataSource.getConnection(HikariDataSource.java:111) ~[HikariCP-5.1.0.jar:?]
+	at org.hibernate.engine.jdbc.connections.internal.DatasourceConnectionProviderImpl.getConnection(DatasourceConnectionProviderImpl.java:126) ~[hibernate-core-6.6.2.Final.jar:6.6.2.Final]
+	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess.obtainConnection(JdbcEnvironmentInitiator.java:467) ~[hibernate-core-6.6.2.Final.jar:6.6.2.Final]
+	at org.hibernate.resource.transaction.backend.jdbc.internal.JdbcIsolationDelegate.delegateWork(JdbcIsolationDelegate.java:61) ~[hibernate-core-6.6.2.Final.jar:6.6.2.Final]
+	... 35 more
+2024-12-24 18:00:10.500 [main] ERROR org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean - Failed to initialize JPA EntityManagerFactory: Unable to create requested service [org.hibernate.engine.jdbc.env.spi.JdbcEnvironment] due to: Unable to determine Dialect without JDBC metadata (please set 'jakarta.persistence.jdbc.url' for common cases or 'hibernate.dialect' when a custom Dialect implementation must be provided)
+2024-12-24 18:00:10.501 [main] WARN org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [org/springframework/boot/autoconfigure/orm/jpa/HibernateJpaConfiguration.class]: Unable to create requested service [org.hibernate.engine.jdbc.env.spi.JdbcEnvironment] due to: Unable to determine Dialect without JDBC metadata (please set 'jakarta.persistence.jdbc.url' for common cases or 'hibernate.dialect' when a custom Dialect implementation must be provided)
+2024-12-24 18:00:10.503 [main] INFO org.apache.catalina.core.StandardService - Stopping service [Tomcat]
+2024-12-24 18:00:10.511 [main] INFO org.springframework.boot.autoconfigure.logging.ConditionEvaluationReportLogger - 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2024-12-24 18:00:10.523 [main] ERROR org.springframework.boot.SpringApplication - Application run failed
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [org/springframework/boot/autoconfigure/orm/jpa/HibernateJpaConfiguration.class]: Unable to create requested service [org.hibernate.engine.jdbc.env.spi.JdbcEnvironment] due to: Unable to determine Dialect without JDBC metadata (please set 'jakarta.persistence.jdbc.url' for common cases or 'hibernate.dialect' when a custom Dialect implementation must be provided)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1802) ~[spring-beans-6.2.0.jar:6.2.0]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:601) ~[spring-beans-6.2.0.jar:6.2.0]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:523) ~[spring-beans-6.2.0.jar:6.2.0]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:336) ~[spring-beans-6.2.0.jar:6.2.0]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:288) ~[spring-beans-6.2.0.jar:6.2.0]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:334) ~[spring-beans-6.2.0.jar:6.2.0]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:204) ~[spring-beans-6.2.0.jar:6.2.0]
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:970) ~[spring-context-6.2.0.jar:6.2.0]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:627) ~[spring-context-6.2.0.jar:6.2.0]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:146) ~[spring-boot-3.4.0.jar:3.4.0]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:752) [spring-boot-3.4.0.jar:3.4.0]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:439) [spring-boot-3.4.0.jar:3.4.0]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:318) [spring-boot-3.4.0.jar:3.4.0]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1361) [spring-boot-3.4.0.jar:3.4.0]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1350) [spring-boot-3.4.0.jar:3.4.0]
+	at com.soupbun.soupbunapi.SoupbunApiApplication.main(SoupbunApiApplication.java:12) [classes/:?]
+Caused by: org.hibernate.service.spi.ServiceException: Unable to create requested service [org.hibernate.engine.jdbc.env.spi.JdbcEnvironment] due to: Unable to determine Dialect without JDBC metadata (please set 'jakarta.persistence.jdbc.url' for common cases or 'hibernate.dialect' when a custom Dialect implementation must be provided)
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.createService(AbstractServiceRegistryImpl.java:276) ~[hibernate-core-6.6.2.Final.jar:6.6.2.Final]
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.initializeService(AbstractServiceRegistryImpl.java:238) ~[hibernate-core-6.6.2.Final.jar:6.6.2.Final]
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.getService(AbstractServiceRegistryImpl.java:215) ~[hibernate-core-6.6.2.Final.jar:6.6.2.Final]
+	at org.hibernate.boot.model.relational.Database.<init>(Database.java:45) ~[hibernate-core-6.6.2.Final.jar:6.6.2.Final]
+	at org.hibernate.boot.internal.InFlightMetadataCollectorImpl.getDatabase(InFlightMetadataCollectorImpl.java:226) ~[hibernate-core-6.6.2.Final.jar:6.6.2.Final]
+	at org.hibernate.boot.internal.InFlightMetadataCollectorImpl.<init>(InFlightMetadataCollectorImpl.java:194) ~[hibernate-core-6.6.2.Final.jar:6.6.2.Final]
+	at org.hibernate.boot.model.process.spi.MetadataBuildingProcess.complete(MetadataBuildingProcess.java:171) ~[hibernate-core-6.6.2.Final.jar:6.6.2.Final]
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.metadata(EntityManagerFactoryBuilderImpl.java:1431) ~[hibernate-core-6.6.2.Final.jar:6.6.2.Final]
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.build(EntityManagerFactoryBuilderImpl.java:1502) ~[hibernate-core-6.6.2.Final.jar:6.6.2.Final]
+	at org.springframework.orm.jpa.vendor.SpringHibernateJpaPersistenceProvider.createContainerEntityManagerFactory(SpringHibernateJpaPersistenceProvider.java:66) ~[spring-orm-6.2.0.jar:6.2.0]
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.createNativeEntityManagerFactory(LocalContainerEntityManagerFactoryBean.java:390) ~[spring-orm-6.2.0.jar:6.2.0]
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.buildNativeEntityManagerFactory(AbstractEntityManagerFactoryBean.java:419) ~[spring-orm-6.2.0.jar:6.2.0]
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.afterPropertiesSet(AbstractEntityManagerFactoryBean.java:400) ~[spring-orm-6.2.0.jar:6.2.0]
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.afterPropertiesSet(LocalContainerEntityManagerFactoryBean.java:366) ~[spring-orm-6.2.0.jar:6.2.0]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1849) ~[spring-beans-6.2.0.jar:6.2.0]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1798) ~[spring-beans-6.2.0.jar:6.2.0]
+	... 15 more
+Caused by: org.hibernate.HibernateException: Unable to determine Dialect without JDBC metadata (please set 'jakarta.persistence.jdbc.url' for common cases or 'hibernate.dialect' when a custom Dialect implementation must be provided)
+	at org.hibernate.engine.jdbc.dialect.internal.DialectFactoryImpl.determineDialect(DialectFactoryImpl.java:191) ~[hibernate-core-6.6.2.Final.jar:6.6.2.Final]
+	at org.hibernate.engine.jdbc.dialect.internal.DialectFactoryImpl.buildDialect(DialectFactoryImpl.java:87) ~[hibernate-core-6.6.2.Final.jar:6.6.2.Final]
+	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator.getJdbcEnvironmentWithDefaults(JdbcEnvironmentInitiator.java:181) ~[hibernate-core-6.6.2.Final.jar:6.6.2.Final]
+	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator.getJdbcEnvironmentUsingJdbcMetadata(JdbcEnvironmentInitiator.java:392) ~[hibernate-core-6.6.2.Final.jar:6.6.2.Final]
+	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator.initiateService(JdbcEnvironmentInitiator.java:129) ~[hibernate-core-6.6.2.Final.jar:6.6.2.Final]
+	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator.initiateService(JdbcEnvironmentInitiator.java:81) ~[hibernate-core-6.6.2.Final.jar:6.6.2.Final]
+	at org.hibernate.boot.registry.internal.StandardServiceRegistryImpl.initiateService(StandardServiceRegistryImpl.java:130) ~[hibernate-core-6.6.2.Final.jar:6.6.2.Final]
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.createService(AbstractServiceRegistryImpl.java:263) ~[hibernate-core-6.6.2.Final.jar:6.6.2.Final]
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.initializeService(AbstractServiceRegistryImpl.java:238) ~[hibernate-core-6.6.2.Final.jar:6.6.2.Final]
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.getService(AbstractServiceRegistryImpl.java:215) ~[hibernate-core-6.6.2.Final.jar:6.6.2.Final]
+	at org.hibernate.boot.model.relational.Database.<init>(Database.java:45) ~[hibernate-core-6.6.2.Final.jar:6.6.2.Final]
+	at org.hibernate.boot.internal.InFlightMetadataCollectorImpl.getDatabase(InFlightMetadataCollectorImpl.java:226) ~[hibernate-core-6.6.2.Final.jar:6.6.2.Final]
+	at org.hibernate.boot.internal.InFlightMetadataCollectorImpl.<init>(InFlightMetadataCollectorImpl.java:194) ~[hibernate-core-6.6.2.Final.jar:6.6.2.Final]
+	at org.hibernate.boot.model.process.spi.MetadataBuildingProcess.complete(MetadataBuildingProcess.java:171) ~[hibernate-core-6.6.2.Final.jar:6.6.2.Final]
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.metadata(EntityManagerFactoryBuilderImpl.java:1431) ~[hibernate-core-6.6.2.Final.jar:6.6.2.Final]
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.build(EntityManagerFactoryBuilderImpl.java:1502) ~[hibernate-core-6.6.2.Final.jar:6.6.2.Final]
+	at org.springframework.orm.jpa.vendor.SpringHibernateJpaPersistenceProvider.createContainerEntityManagerFactory(SpringHibernateJpaPersistenceProvider.java:66) ~[spring-orm-6.2.0.jar:6.2.0]
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.createNativeEntityManagerFactory(LocalContainerEntityManagerFactoryBean.java:390) ~[spring-orm-6.2.0.jar:6.2.0]
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.buildNativeEntityManagerFactory(AbstractEntityManagerFactoryBean.java:419) ~[spring-orm-6.2.0.jar:6.2.0]
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.afterPropertiesSet(AbstractEntityManagerFactoryBean.java:400) ~[spring-orm-6.2.0.jar:6.2.0]
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.afterPropertiesSet(LocalContainerEntityManagerFactoryBean.java:366) ~[spring-orm-6.2.0.jar:6.2.0]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1849) ~[spring-beans-6.2.0.jar:6.2.0]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1798) ~[spring-beans-6.2.0.jar:6.2.0]
+	... 15 more
+2024-12-24 18:00:23.209 [main] INFO com.soupbun.soupbunapi.SoupbunApiApplication - Starting SoupbunApiApplication using Java 17.0.11 with PID 23160 (C:\projetcs\soupbun-api\target\classes started by kstone in C:\projetcs\soupbun-api)
+2024-12-24 18:00:23.214 [main] INFO com.soupbun.soupbunapi.SoupbunApiApplication - No active profile set, falling back to 1 default profile: "default"
+2024-12-24 18:00:23.582 [main] INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-12-24 18:00:23.596 [main] INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 9 ms. Found 0 JPA repository interfaces.
+2024-12-24 18:00:23.895 [main] INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2024-12-24 18:00:23.904 [main] INFO org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2024-12-24 18:00:23.906 [main] INFO org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2024-12-24 18:00:23.906 [main] INFO org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.33]
+2024-12-24 18:00:23.943 [main] INFO org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2024-12-24 18:00:23.943 [main] INFO org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 704 ms
+2024-12-24 18:00:24.040 [main] INFO org.hibernate.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-12-24 18:00:24.076 [main] INFO org.hibernate.Version - HHH000412: Hibernate ORM core version 6.6.2.Final
+2024-12-24 18:00:24.098 [main] INFO org.hibernate.cache.internal.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2024-12-24 18:00:24.276 [main] INFO org.springframework.orm.jpa.persistenceunit.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-12-24 18:00:24.296 [main] INFO com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2024-12-24 18:00:30.046 [main] INFO com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@484302ee
+2024-12-24 18:00:30.048 [main] INFO com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2024-12-24 18:00:30.144 [main] INFO org.hibernate.orm.connections.pooling - HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 8.2
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2024-12-24 18:00:30.356 [main] INFO org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-12-24 18:00:30.361 [main] INFO org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-12-24 18:00:30.383 [main] WARN org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-12-24 18:00:30.817 [main] INFO org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2024-12-24 18:00:30.830 [main] INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
+2024-12-24 18:00:30.837 [main] INFO com.soupbun.soupbunapi.SoupbunApiApplication - Started SoupbunApiApplication in 7.946 seconds (process running for 8.454)
+2024-12-24 18:05:22.275 [SpringApplicationShutdownHook] INFO org.springframework.boot.web.embedded.tomcat.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
+2024-12-24 18:05:22.447 [tomcat-shutdown] INFO org.springframework.boot.web.embedded.tomcat.GracefulShutdown - Graceful shutdown complete
+2024-12-24 18:05:22.451 [SpringApplicationShutdownHook] INFO org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-12-24 18:05:22.453 [SpringApplicationShutdownHook] INFO com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2024-12-24 18:05:22.764 [SpringApplicationShutdownHook] INFO com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2024-12-24 18:05:26.799 [main] INFO com.soupbun.soupbunapi.SoupbunApiApplication - Starting SoupbunApiApplication using Java 17.0.11 with PID 41876 (C:\projetcs\soupbun-api\target\classes started by kstone in C:\projetcs\soupbun-api)
+2024-12-24 18:05:26.804 [main] INFO com.soupbun.soupbunapi.SoupbunApiApplication - No active profile set, falling back to 1 default profile: "default"
+2024-12-24 18:05:27.407 [main] INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2024-12-24 18:05:27.417 [main] INFO org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2024-12-24 18:05:27.418 [main] INFO org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2024-12-24 18:05:27.418 [main] INFO org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.33]
+2024-12-24 18:05:27.455 [main] INFO org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2024-12-24 18:05:27.455 [main] INFO org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 626 ms
+2024-12-24 18:05:27.957 [main] INFO org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2024-12-24 18:05:27.968 [main] INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
+2024-12-24 18:05:27.974 [main] INFO com.soupbun.soupbunapi.SoupbunApiApplication - Started SoupbunApiApplication in 1.494 seconds (process running for 2.023)
+2024-12-24 18:09:46.928 [SpringApplicationShutdownHook] INFO org.springframework.boot.web.embedded.tomcat.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
+2024-12-24 18:09:47.095 [tomcat-shutdown] INFO org.springframework.boot.web.embedded.tomcat.GracefulShutdown - Graceful shutdown complete
+2024-12-24 18:09:50.983 [main] INFO com.soupbun.soupbunapi.SoupbunApiApplication - Starting SoupbunApiApplication using Java 17.0.11 with PID 41940 (C:\projetcs\soupbun-api\target\classes started by kstone in C:\projetcs\soupbun-api)
+2024-12-24 18:09:50.988 [main] INFO com.soupbun.soupbunapi.SoupbunApiApplication - No active profile set, falling back to 1 default profile: "default"
+2024-12-24 18:09:51.357 [main] INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-12-24 18:09:51.377 [main] INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 14 ms. Found 0 JPA repository interfaces.
+2024-12-24 18:09:51.669 [main] INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2024-12-24 18:09:51.678 [main] INFO org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2024-12-24 18:09:51.679 [main] INFO org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2024-12-24 18:09:51.679 [main] INFO org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.33]
+2024-12-24 18:09:51.716 [main] INFO org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2024-12-24 18:09:51.717 [main] INFO org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 704 ms
+2024-12-24 18:09:51.814 [main] INFO org.hibernate.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-12-24 18:09:51.859 [main] INFO org.hibernate.Version - HHH000412: Hibernate ORM core version 6.6.2.Final
+2024-12-24 18:09:51.885 [main] INFO org.hibernate.cache.internal.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2024-12-24 18:09:52.079 [main] INFO org.springframework.orm.jpa.persistenceunit.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-12-24 18:09:52.104 [main] INFO com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2024-12-24 18:09:52.772 [main] INFO com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@ca10069
+2024-12-24 18:09:52.773 [main] INFO com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2024-12-24 18:09:52.886 [main] INFO org.hibernate.orm.connections.pooling - HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 8.2
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2024-12-24 18:09:53.112 [main] INFO org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-12-24 18:09:53.115 [main] INFO org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-12-24 18:09:53.140 [main] WARN org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-12-24 18:09:53.578 [main] INFO org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2024-12-24 18:09:53.591 [main] INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
+2024-12-24 18:09:53.598 [main] INFO com.soupbun.soupbunapi.SoupbunApiApplication - Started SoupbunApiApplication in 2.924 seconds (process running for 3.431)
+2024-12-24 18:11:23.356 [SpringApplicationShutdownHook] INFO org.springframework.boot.web.embedded.tomcat.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
+2024-12-24 18:11:23.517 [tomcat-shutdown] INFO org.springframework.boot.web.embedded.tomcat.GracefulShutdown - Graceful shutdown complete
+2024-12-24 18:11:23.522 [SpringApplicationShutdownHook] INFO org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-12-24 18:11:23.525 [SpringApplicationShutdownHook] INFO com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2024-12-24 18:11:23.729 [SpringApplicationShutdownHook] INFO com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
